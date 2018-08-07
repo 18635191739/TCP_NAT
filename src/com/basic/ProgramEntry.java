@@ -2,6 +2,7 @@ package com.basic;
 
 import com.MyClientL.EchoClient;
 import com.MyClientR.EchoClient2;
+import com.MyServer.CommandSender;
 import com.MyServer.EchoServer;
 import java.util.Scanner;
 
@@ -21,6 +22,9 @@ public class ProgramEntry {
                 break;
             case "CR":
                 EchoClient2.StartClientR();
+                break;
+            case "M":
+                CommandSender.SendCommandToServer(null);
                 break;
                 default:
                     System.out.println("Error args");

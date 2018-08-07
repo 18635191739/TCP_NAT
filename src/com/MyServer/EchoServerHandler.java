@@ -53,4 +53,8 @@ public class EchoServerHandler extends SimpleChannelInboundHandler<DatagramPacke
 
         super.channelActive(ctx);
     }
+
+    private void CommM(){
+
+    }
 }

@@ -39,7 +39,7 @@ public class EchoClientHandler2 extends SimpleChannelInboundHandler<DatagramPack
         System.out.println("客户端向服务器发送自己的IP和PORT");
         ctx.writeAndFlush(new DatagramPacket(
                 Unpooled.copiedBuffer("R".getBytes()),
-                new InetSocketAddress("1831.1.1", 7402)));
+                new InetSocketAddress("127.0.0.1", 7402)));
         super.channelActive(ctx);
     }
 }
