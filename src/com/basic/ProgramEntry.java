@@ -11,6 +11,8 @@ import  java.util.regex.*;
 
 public class ProgramEntry {
     public static void main(String[] args){
+        //SKClient.SearchServerPort(getV4IP(),1,65535);
+
         for (String a: args
         ) {
             System.out.println("args:"+a);
@@ -29,6 +31,8 @@ public class ProgramEntry {
                 case "skc":
                     SKClient.StartClient();
                     break;
+                case "scan":
+                    SKClient.SearchServerPort("localhost",1,65537);
                 default:
                     System.out.println("Error args");
                     break;

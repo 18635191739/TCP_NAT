@@ -56,7 +56,8 @@ public class SKServer {
         public void run() {
             try {
                 Writer out = new OutputStreamWriter(connection.getOutputStream());
-                out.write("Hello,This is SKServer"+ new Date().toString());
+//                out.write("Hello,This is SKServer"+ new Date().toString());
+                out.write("HaHa,you found me!");
                 out.flush();
                 System.out.println("向客户端发送消息"+new Date().toString());
             }catch (IOException ex){
