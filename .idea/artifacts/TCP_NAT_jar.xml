@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="TCP_NAT:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TCP_NAT_jar</output-path>
+    <root id="archive" name="TCP_NAT.jar">
+      <element id="module-output" name="TCP_NAT" />
+    </root>
+  </artifact>
+</component>
