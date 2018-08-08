@@ -1,0 +1,52 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="UDP_NAT:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/UDP_NAT_jar</output-path>
+    <root id="archive" name="UDP_NAT.jar">
+      <element id="module-output" name="UDP_NAT" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-build-22.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-build-22-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-codec-4.1.28.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-buffer-4.1.28.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-common-4.1.28.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-example-4.1.28.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-handler-4.1.28.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-resolver-4.1.28.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-transport-4.1.28.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-codec-http-4.1.28.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-codec-http2-4.1.28.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-codec-redis-4.1.28.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-codec-socks-4.1.28.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-codec-stomp-4.1.28.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-codec-4.1.28.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-handler-proxy-4.1.28.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-transport-udt-4.1.28.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-buffer-4.1.28.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-codec-memcache-4.1.28.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-common-4.1.28.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-transport-rxtx-4.1.28.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-transport-sctp-4.1.28.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-example-4.1.28.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-handler-4.1.28.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-resolver-4.1.28.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-tcnative-2.0.12.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-transport-4.1.28.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-codec-http-4.1.28.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-codec-http2-4.1.28.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-codec-redis-4.1.28.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-codec-socks-4.1.28.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-codec-stomp-4.1.28.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-tcnative-2.0.12.Final-osx-x86_64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-handler-proxy-4.1.28.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-transport-udt-4.1.28.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-codec-memcache-4.1.28.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-transport-rxtx-4.1.28.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-transport-sctp-4.1.28.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-transport-native-unix-common-4.1.28.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-transport-native-epoll-4.1.28.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-transport-native-kqueue-4.1.28.Final-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-transport-native-kqueue-4.1.28.Final-osx-x86_64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-transport-native-epoll-4.1.28.Final-linux-x86_64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/local/lib/netty-4.1.28.Final/jar/netty-transport-native-unix-common-4.1.28.Final-sources.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
