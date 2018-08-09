@@ -42,7 +42,7 @@ public class SKClient {
             try{
                 Socket s = new Socket();
                 System.out.println("check port"+hostname+":"+i);
-                s.connect(new InetSocketAddress(hostname,i),1000);
+                s.connect(new InetSocketAddress(hostname,i),150);
                 System.out.println("There is a server at "+hostname+":"+i);
                 s.close();
             }catch (UnknownHostException ex){
@@ -52,6 +52,7 @@ public class SKClient {
             catch (IOException ex){
                 //此端口非服务器
                 //ErrorHandler.DoWhenError(ex,"非服务器端口");
+                System.out.println("非服务器端口");
             }
 
         }

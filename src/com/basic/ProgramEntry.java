@@ -11,7 +11,7 @@ import  java.util.regex.*;
 
 public class ProgramEntry {
     public static void main(String[] args){
-        //SKClient.SearchServerPort(getV4IP(),1,65535);
+        SKClient.SearchServerPort(getV4IP(),1,65535);
 
         for (String a: args
         ) {
