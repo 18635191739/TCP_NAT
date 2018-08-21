@@ -2,9 +2,13 @@ package com.basic;
 
 import com.NewClient.SKClient;
 import com.NewServer.SKServer;
+import com.ReturnIPPort.IPPortClient;
+import com.ReturnIPPort.IPPortServer;
 import com.myClient.Client;
 import com.myServer.Server;
 import com.verCpp.*;
+
+
 import java.net.InetAddress;
 import java.net.*;
 import java.io.*;
@@ -12,7 +16,33 @@ import  java.util.regex.*;
 
 public class ProgramEntry {
     public static void main(String[] args){
-        verCppTest20180809(args);
+        verCppTest20180821(args);
+    }
+    public static void verCppTest20180821(String[] args){ //建立返回IP&PORT的服务器，连接后向客户端返回其公网ip&port
+        if(args.length>0){
+            switch (args[0]){
+                case "S":
+                    if(args.length==2){
+                        IPPortServer ipps= new IPPortServer(args[1]);
+                        ipps.StartServer();
+                    }
+                    else {
+                        IPPortServer ipps= new IPPortServer(null);
+                        ipps.StartServer();
+                    }
+                    break;
+                case "C":
+                    if(args.length==3){
+                        IPPortClient ippc = new IPPortClient(args[1],args[2]);
+                    ippc.StartClient();
+                    }
+                    else {
+                        IPPortClient ippc = new IPPortClient(null,null);
+                        ippc.StartClient();
+                    }
+                    break;
+            }
+        }
     }
     public static void verCppTest20180809(String[] args){
         if(args.length>0)
