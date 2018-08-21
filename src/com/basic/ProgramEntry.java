@@ -4,6 +4,7 @@ import com.NewClient.SKClient;
 import com.NewServer.SKServer;
 import com.myClient.Client;
 import com.myServer.Server;
+import com.verCpp.*;
 import java.net.InetAddress;
 import java.net.*;
 import java.io.*;
@@ -11,50 +12,74 @@ import  java.util.regex.*;
 
 public class ProgramEntry {
     public static void main(String[] args){
-        SKClient.SearchServerPort(getV4IP(),1,65535);
-
-        for (String a: args
-        ) {
-            System.out.println("args:"+a);
-        }
+        verCppTest20180809(args);
+    }
+    public static void verCppTest20180809(String[] args){
         if(args.length>0)
             switch (args[0]){
                 case "S":
-                    Server.StartServer();
+                    cServer.StartServer();
                     break;
                 case "C":
-                    Client.StartClient();
+                    cClient.StartClient();
                     break;
-                case "sks":
-                    SKServer.StartServer();
-                    break;
-                case "skc":
-                    SKClient.StartClient();
-                    break;
-                case "scan":
-                    SKClient.SearchServerPort("localhost",1,65537);
+//                case "sks":
+//                    SKServer.StartServer();
+//                    break;
+//                case "skc":
+//                    SKClient.StartClient();
+//                    break;
+//                case "scan":
+//                    SKClient.SearchServerPort("localhost",1,65537);
                 default:
                     System.out.println("Error args");
                     break;
             }
-            try{
-                GetIP();
-            }
+    }
+    public static void ScannerTest20180808(String[] args){
+    SKClient.SearchServerPort(getV4IP(),1,65535);
 
-        catch(Exception ex){
-
-            }
-            System.out.println("IP:"+getV4IP());
-            try{
-
-                ServerSocket ss = new ServerSocket(10240);
-                System.out.println("Reusable:"+ss.getReuseAddress());
-            }
-            catch (Exception ex){
-
-            }
+    for (String a: args
+    ) {
+        System.out.println("args:"+a);
+    }
+    if(args.length>0)
+        switch (args[0]){
+            case "S":
+                Server.StartServer();
+                break;
+            case "C":
+                Client.StartClient();
+                break;
+            case "sks":
+                SKServer.StartServer();
+                break;
+            case "skc":
+                SKClient.StartClient();
+                break;
+            case "scan":
+                SKClient.SearchServerPort("localhost",1,65537);
+            default:
+                System.out.println("Error args");
+                break;
+        }
+    try{
+        GetIP();
     }
 
+    catch(Exception ex){
+
+    }
+    System.out.println("IP:"+getV4IP());
+    try{
+
+        ServerSocket ss = new ServerSocket(10240);
+        System.out.println("Reusable:"+ss.getReuseAddress());
+    }
+    catch (Exception ex){
+
+    }
+}
     public static void GetIP() throws Exception{
         InetAddress addr = InetAddress.getLocalHost();
         String ip=addr.getHostAddress().toString(); //获取本机ip
