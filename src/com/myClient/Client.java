@@ -51,7 +51,7 @@ public class Client {
 
             try {
                 while (true) {
-                    if(process()) {
+                    if(process()) { //process 返回true时退出
                         break;
                     }
                 }
@@ -106,7 +106,7 @@ public class Client {
         //处理服务器命令
         processRemoteCommand(info);
 
-        return "exit".equals(in);
+        return "exit".equals(in); //输入exit时返回true
     }
 
     private void processRemoteCommand(String info) throws IOException {
