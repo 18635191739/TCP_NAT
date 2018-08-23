@@ -1,5 +1,4 @@
 package com.basic;
-
 import com.NewClient.SKClient;
 import com.NewServer.SKServer;
 import com.ReturnIPPort.IPPortClient;
@@ -157,6 +156,5 @@ public class ProgramEntry {
             ip = ipstr;
             //System.out.println(ipstr);
         }
-        return ip;
     }
 }
